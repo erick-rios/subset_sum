@@ -1,5 +1,7 @@
 # Subset Sum Approximation using FPAS (Fully Polynomial-Time Approximation Scheme)
 
+## Author: **Erick Jesús Ríos González**
+
 ## **Project Description**
 
 This project implements the **Subset Sum** problem using a Fully Polynomial-Time Approximation Scheme (FPAS) in C++. The goal of the problem is to find a subsequence of a set of positive integers whose sum is as close as possible, without exceeding, a given target value (`t`). The project includes:
