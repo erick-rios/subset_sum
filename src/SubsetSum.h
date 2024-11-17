@@ -1,3 +1,10 @@
+/**
+ * SubsetSum.h
+ * 
+ * Header file for the SubsetSum class.
+ * 
+ * The SubsetSum class implements an approximation algorithm for the subset sum problem.    
+ */
 #ifndef SUBSET_SUM_H
 #define SUBSET_SUM_H
 

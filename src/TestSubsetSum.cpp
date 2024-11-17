@@ -1,3 +1,16 @@
+/**
+ * @file TestSubsetSum.cpp
+ * @brief Test suite for the approximation algorithm for the subset sum problem.
+ * 
+ * This file contains the test suite for the approximation algorithm for the subset sum problem.
+ * 
+ * The test suite generates random instances of the subset sum problem and validates the output
+ * of the approximation algorithm against the optimal solution.
+ * 
+ * @author Erick Jesús Ríos González
+ * @date  16/11/2024
+ */
+
 #include "SubsetSum.h"
 #include <iostream>
 #include <vector>
@@ -56,7 +69,7 @@ std::vector<int> computeOptimalSubsetSum(const std::vector<int>& S, int t) {
  */
 void testConditions() {
     for (int test = 1; test <= 5; ++test) { // Run 5 tests
-        // Step 1: Generate random instance
+        // Generate random instance
         std::vector<int> S;
         int t;
         generateInstance(S, t);
@@ -67,12 +80,12 @@ void testConditions() {
         for (int s : S) std::cout << s << " ";
         std::cout << "\nt = " << t << std::endl;
 
-        // Step 2: Run approximation algorithm
+        // Define epsilon
         double epsilon = 0.1;
         SubsetSum subsetSum(S, t, epsilon);
         int result = subsetSum.approxSubsetSum();
 
-        // Step 3: Validate output
+        // Validate output
         std::cout << "Validating result...\n";
         bool isValid = true;
 
