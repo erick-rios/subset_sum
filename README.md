@@ -29,6 +29,7 @@ Este proyecto implementa el problema **Subset Sum** utilizando un esquema de apr
 │   ├── capture4.png
 │   └── capture5.png
 
+```
 ## Requisites 
 - Operative System: Linux or either SO compatible with (`g++`)
 - Compiler: `g++` with standar support C++17
