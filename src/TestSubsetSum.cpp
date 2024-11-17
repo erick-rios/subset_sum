@@ -81,7 +81,15 @@ void testConditions() {
         std::cout << "\nt = " << t << std::endl;
 
         // Define epsilon
-        double epsilon = 0.1;
+        double epsilon;
+        std::cout << "Enter a value for ε (0 < ε < 1): ";
+        std::cin >> epsilon;
+
+        if (epsilon > 0 && epsilon < 1) {
+            std::cout << "Valid input: " << epsilon << std::endl;
+        } else {
+            std::cout << "Invalid input! Please enter a value between 0 and 1." << std::endl;
+        }
         SubsetSum subsetSum(S, t, epsilon);
         int result = subsetSum.approxSubsetSum();
 

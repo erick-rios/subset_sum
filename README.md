@@ -40,6 +40,7 @@ This project implements the **Subset Sum** problem using a Fully Polynomial-Time
     - bash
 
 ## Compile
+
 To compile the project, executes the followin command in the root of the project:
 
 ```bash
